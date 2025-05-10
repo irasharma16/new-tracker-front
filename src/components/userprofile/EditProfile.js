@@ -8,7 +8,11 @@ import './EditProfile.css';
 import { API_BASEURL } from '../../variables';
 
 // Create axios instance with proper configuration
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || API_BASEURL; 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || API_BASEURL
+
+
+
+; 
 const axiosInstance = axios.create({
   baseURL: API_BASE_URL,
   headers: {
