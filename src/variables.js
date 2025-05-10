@@ -1,1 +1,1 @@
-export const API_BASEURL= process.env.API_BASEURL||"http://localhost:8080" 
+export const API_BASEURL= process.env.API_BASEURL||"https://issue-tracker-be.vercel.app/" 

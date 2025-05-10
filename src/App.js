@@ -48,6 +48,7 @@ function App() {
 
   // PrivateRoute component to protect routes
  const PrivateRoute = ({ element }) => {
+    console.log("🚀 ~ PrivateRoute ~ element:", element)
     return isAuthenticated ? element : <Navigate to="/login" />;
   };
 
