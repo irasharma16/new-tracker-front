@@ -1,0 +1,142 @@
+.client-visit-container {
+    padding: 20px 40px;
+    min-height: 100vh;
+  }
+  
+  .client-visit-container h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  /* Form Container */
+  .client-visit-form-container {
+    background-color: transparent;
+    margin-bottom: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* Form Row Styling */
+  .client-visit-form-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Changed to 4 columns */
+    gap: 15px; /* Increased gap for better spacing */
+    margin-bottom: 25px;
+  }
+  
+  
+  .client-visit-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .client-visit-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  /* Input Fields Styling */
+  .client-visit-form-group input,
+  .client-visit-form-group select,
+  .client-visit-form-group textarea,
+  .react-datepicker-wrapper,
+  .react-datepicker__input-container input {
+    width: 100%; /* Changed from fixed width to 100% */
+    max-width: 250px; /* Maintain max width */
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 35px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  /* Specific styling for textarea */
+  .client-visit-form-group textarea {
+    height: 38px;
+    resize: vertical;
+    min-height: 38px;
+  }
+  
+  /* DatePicker Container */
+  .react-datepicker-wrapper {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+  
+  .react-datepicker__input-container {
+    width: 100%;
+  }
+  
+  /* Button Group */
+  .client-visit-button-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Button Styles */
+  .btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: 100px;
+  }
+  
+  .btn-primary {
+    background-color: #666666;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #555555;
+  }
+  
+  .btn-secondary {
+    background-color: #666666;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #555555;
+  }
+  
+  /* Table Styles */
+  .client-visit-table-container {
+    margin-top: 30px;
+    overflow-x: auto;
+  }
+  
+  .client-visit-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .client-visit-table th,
+  .client-visit-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  .client-visit-table th {
+    background-color: #e1e0e0;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .client-visit-table tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }

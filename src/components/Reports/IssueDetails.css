@@ -1,0 +1,206 @@
+/* General Container Styles */
+.issue-form-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.issue-form-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Styles */
+.issue-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.issue-form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.form-error {
+  color: #d32f2f; /* Red color for error message */
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.issue-form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.issue-form-group label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.issue-form-group input,
+.issue-form-group select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 4vh;
+}
+
+.issue-form-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+/* Button Styles (Shared) */
+.issue-form-actions button,
+.search-results-table button {
+  padding: 5px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #4a4a4a;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.issue-form-actions button:hover,
+.search-results-table button:hover {
+  background-color: #383838;
+}
+
+.issue-form-actions button:disabled,
+.search-results-table button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Search Results Table */
+.search-results-table {
+  margin-top: 30px;
+}
+
+.search-results-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-results-table th,
+.search-results-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.search-results-table th {
+  background-color: #e1e0e0;
+  color: #333;
+  font-weight: bold;
+}
+
+.search-results-table tbody tr:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  width: 600px;
+  max-width: 90%;
+  padding: 20px; 
+  margin: 20px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-out;
+  position: relative;
+  box-sizing: border-box; 
+}
+
+/* Modal Close Button */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #555;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: #d32f2f; 
+}
+
+/* Modal Header */
+
+  .modal-content h2 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px; 
+    text-align: center; 
+  }
+
+/* Modal Details Grid */
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 15px; 
+  margin-top: 20px; 
+}
+
+.result-item {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  padding: 5px; 
+}
+
+.result-item strong {
+  color: #333;
+}
+
+/* Keyframes for Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+

@@ -1,0 +1,143 @@
+/* Login Page Container */
+.loginForm-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+}
+
+/* Main Headings */
+.loginh1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.loginh1:first-child {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Login Form */
+.loginForm {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px;
+    /* Reduced from 400px */
+    margin: 1rem 0;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Labels */
+.loginlabel {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Input Fields */
+.loginForm input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+    outline: none;
+}
+
+.loginForm input:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+/* Login Button */
+.loginButtons {
+    width: auto;
+    /* Changed from 100% */
+    min-width: 120px;
+    /* Added minimum width */
+    padding: 0.875rem 2rem;
+    /* Added horizontal padding */
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: block;
+    /* Added to center the button */
+    margin: 0 auto;
+    /* Added to center the button */
+}
+
+.loginButtons:hover {
+    background-color: #3182ce;
+}
+
+.loginButtons:active {
+    background-color: #2c5282;
+}
+
+/* Forgot Password Link */
+.forgotPassword {
+    display: block;
+    text-align: center;
+    color: #4299e1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    transition: color 0.2s ease;
+}
+
+.forgotPassword:hover {
+    color: #2c5282;
+    text-decoration: underline;
+}
+
+/* Toast Container Customization */
+.Toastify__toast {
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.login-footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #0f0f0f;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .loginForm {
+        padding: 1.5rem;
+        max-width: 280px;
+        /* Slightly smaller on mobile */
+    }
+
+    .loginh1 {
+        font-size: 1.75rem;
+    }
+
+    .loginh1:first-child {
+        font-size: 2rem;
+    }
+}

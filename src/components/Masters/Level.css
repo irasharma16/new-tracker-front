@@ -1,0 +1,154 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+    background-color: #fcfcfc;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    /* Center the header */
+}
+
+.levelform-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    /* Center the form container */
+}
+
+.levelform-row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    column-gap: 150px;
+    margin-left: 10px;
+    margin-left:18px;
+}
+
+.levelform-group {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px; /* Adds space between label and input */
+    margin-bottom: 12px;
+}
+.levelform-group label {
+    flex-basis: 100px; 
+    text-align: right; 
+}
+
+.levelform-group input,
+.levelform-group select {
+    flex: 1; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 250px;
+}
+.levelform-group input[type="checkbox"] {
+    flex: 0; 
+}
+.levelbutton-group {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 42px;
+    gap: 10px;
+}
+
+.levelbutton-group .btn {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+}
+
+.levelbutton-group .btn:hover {
+    background-color: #333;
+}
+
+.levelbutton-group .btn-delete {
+    background-color: #4a4a4a;
+}
+
+.levelbutton-group .btn-delete:hover {
+    background-color: #333;
+}
+
+.leveltable-container {
+    overflow-x: auto;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+#levelTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    table-layout: fixed;
+}
+
+#levelTable th,
+#levelTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dad8d8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#levelTable th {
+    background-color: #e1e0e0;
+    font-weight: bold;
+}
+
+#levelTable tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+#levelTable tr:hover {
+    background-color: #efeded;
+}
+
+#levelTable .btn-select {
+    background-color: #4a4a4a;
+    color: white;
+    white-space: nowrap;
+}
+
+#levelTable .btn-select:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .levelform-row {
+        flex-wrap: wrap;
+    }
+
+    .levelform-group {
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .levelbutton-group {
+        flex-direction: column;
+    }
+
+    .levelbutton-group .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

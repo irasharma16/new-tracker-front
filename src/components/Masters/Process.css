@@ -1,0 +1,161 @@
+/* Process.css */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+    background-color: #fcfcfc;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    /* Center the header */
+}
+
+.processform-container {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    /* Center the form container */
+}
+
+.processform-row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    column-gap: 150px; /* Space between columns */
+    margin-left: 10px;
+}
+
+.processform-group {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px; /* Adds space between label and input */
+    margin-bottom: 12px;
+}
+
+.processform-group input[type="checkbox"] {
+    flex: 0; /* Keeps the checkbox from stretching */
+    margin-left: 10px; /* Adds some space between the checkbox and the preceding element */
+}
+
+.processform-group label {
+    flex-basis: 100px;
+    text-align: right;
+}
+
+.processform-group input,
+.processform-group select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 250px;
+}
+
+.processbutton-group {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 18px;
+    gap: 10px;
+}
+
+.processbutton-group .btn {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+}
+
+.processbutton-group .btn:hover {
+    background-color: #333;
+}
+
+.processbutton-group .btn-delete {
+    background-color: #4a4a4a;
+}
+
+.processbutton-group .btn-delete:hover {
+    background-color: #333;
+}
+
+
+.processtable-container {
+  overflow-x: auto;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1452px;
+}
+
+#processTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  table-layout: fixed;
+}
+
+#processTable th,
+#processTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dad8d8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#processTable th {
+  background-color: #e1e0e0;
+  font-weight: bold;
+}
+
+#processTable tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+#processTable tr:hover {
+  background-color: #efeded;
+}
+
+#processTable .btn-select {
+  background-color: #4a4a4a;
+  color: white;
+  white-space: nowrap;
+}
+
+#processTable .btn-select:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .processform-row {
+    flex-wrap: wrap;
+  }
+
+  .processform-group {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .processbutton-group {
+    flex-direction: column;
+  }
+
+  .processbutton-group .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

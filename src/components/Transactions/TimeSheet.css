@@ -1,0 +1,192 @@
+/* TimeSheet.css */
+.timesheet-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.timesheet-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.timesheet-form-container {
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.timesheet-form-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.timesheet-form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.timesheet-form-group label {
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Base styles for form inputs (excluding DatePicker) */
+.timesheet-form-group input:not(.react-datepicker__input-container input),
+.timesheet-form-group select,
+.timesheet-form-group textarea {
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Textarea specific styles */
+.timesheet-form-group textarea {
+  height: 40px;
+  resize: vertical;
+}
+
+/* File input specific styles */
+.timesheet-form-group input[type="file"] {
+  height: auto;
+  padding: 8px;
+}
+
+/* DatePicker specific styles */
+.timesheet-form-group .react-datepicker-wrapper,
+.timesheet-form-group .react-datepicker__input-container {
+  display: block;
+  width: 100%;
+}
+
+.timesheet-form-group .react-datepicker__input-container input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.react-datepicker {
+  font-family: 'Arial', sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.react-datepicker__header {
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Button styles */
+.timesheet-button-group {
+  display: flex;
+  justify-content:flex-start;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 7px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-success {
+  background-color: #454545;
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-success:hover {
+  background-color: #333333;
+}
+
+/* Table styles */
+.timesheet-table-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.timesheet-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timesheet-table thead {
+  background-color: #f1f1f1;
+}
+
+.timesheet-table th,
+.timesheet-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.timesheet-table tr:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.timesheet-table td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.timesheet-table td a:hover {
+  text-decoration: underline;
+}
+
+/* Focus and hover states for inputs */
+.timesheet-form-group input:focus,
+.timesheet-form-group select:focus,
+.timesheet-form-group textarea:focus,
+.react-datepicker__input-container input:focus {
+  outline: none;
+  border-color: #454545;
+  box-shadow: 0 0 0 2px rgba(69, 69, 69, 0.1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .timesheet-form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timesheet-form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .timesheet-button-group {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

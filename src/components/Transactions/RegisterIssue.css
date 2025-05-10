@@ -1,0 +1,454 @@
+.register-container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-left: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  width: calc(100% - 240px);
+}
+
+.register-header {
+  position: fixed;
+  top: 0;
+  left: 240px;
+  right: 0;
+  background: white;
+  z-index: 100;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.register-header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.register-content {
+  margin-top: 100px;
+}
+
+.register-container h1 {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  font-family: Arial, sans-serif;
+}
+
+.register-main-content {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.register-buttons-container {
+  display: flex;
+  gap: 10px; /* This will add a 10px gap between the buttons */
+  margin-bottom: 20px; /* Optional: adds some space below the buttons */
+}
+
+.register-new-button, .register-export-button {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.register-new-button:hover {
+  background-color: #333;
+}
+
+.issue-number-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.issue-number-display label {
+  font-weight: normal;
+  color: #333;
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+.issue-number-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 150px;
+  background-color: #f8f8f8;
+  cursor: not-allowed;
+  font-size: 14px;
+}
+
+.register-form-group .required {
+  color: #dc3545;
+  display: inline-block;
+  margin-top: 0;
+  line-height: 1;
+  font-size: 14px;
+}
+
+.register-form-group input,
+.register-form-group select {
+  flex: 1;
+  width: auto;
+  max-width: 245px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Placeholder styles */
+
+.register-form-group input::placeholder,
+.register-form-group textarea::placeholder {
+  color: #999 !important;
+  opacity: 1;
+}
+
+/* For Internet Explorer */
+.register-form-group input:-ms-input-placeholder,
+.register-form-group textarea:-ms-input-placeholder {
+  color: #999 !important;
+}
+
+/* For Microsoft Edge */
+.register-form-group input::-ms-input-placeholder,
+.register-form-group textarea::-ms-input-placeholder {
+  color: #999 !important;
+}
+
+/* For Chrome, Firefox, and Safari */
+.register-form-group input::-webkit-input-placeholder,
+.register-form-group textarea::-webkit-input-placeholder {
+  color: #999 !important;
+}
+
+/* Style for date input placeholder */
+.register-form-group input[type="date"]::-webkit-datetime-edit-text,
+.register-form-group input[type="date"]::-webkit-datetime-edit-month-field,
+.register-form-group input[type="date"]::-webkit-datetime-edit-day-field,
+.register-form-group input[type="date"]::-webkit-datetime-edit-year-field {
+  color: #999;
+}
+
+.register-form-group input[type="date"]:invalid {
+  color: #999;
+}
+/* Updated select placeholder styles */
+.register-form-group select {
+  color: #333;
+  /* Default color for selected option */
+}
+
+.register-form-group select option:first-child {
+  color: #999 !important;
+}
+
+/* Style for unselected state */
+.register-form-group select:invalid,
+.register-form-group select option[value=""] {
+  color: #999 !important;
+}
+
+/* Make sure the select's text is grey when nothing is selected */
+.register-form-group select:required:invalid {
+  color: #999 !important;
+}
+
+/* When an option is selected, make the text color normal */
+.register-form-group select option:not(:first-child) {
+  color: #333;
+}
+
+/* Selected option color */
+.register-form-group select:valid {
+  color: #333;
+}
+
+.register-form-group input:focus,
+.register-form-group select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.register-form-group input[type="file"] {
+  max-width: 250px;
+  padding: 0;
+}
+
+.register-form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23999999%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px top 50%;
+  background-size: 10px auto;
+  padding-right: 25px;
+}
+
+.textarea-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.textarea-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.register-form-group textarea {
+  height: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  resize: vertical;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  width: 90%;
+  min-width: 300px;
+  max-width: 450px;
+  
+}
+
+/* Modal Styles */
+.ri-ReactModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+  z-index: 1000;
+}
+
+.ri-ReactModal__Content {
+  background-color: white !important;
+  width: 65% !important;
+  max-width: 800px !important;
+  max-height: 85vh !important;
+  position: relative !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  inset: auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  
+}
+
+.ri-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.ri-modal-close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.ri-modal-close-button:hover {
+  color: #333;
+}
+
+.ri-modal-form {
+  padding: 0;
+  flex-grow: 1;
+}
+
+.ri-modal-form h2 {
+  margin: 0;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.5rem;
+}
+.ri-modal-content-wrapper {
+  padding: 0px;
+  overflow-y: auto;
+  max-height: calc(85vh - 140px);
+}
+
+.register-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.register-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.register-form-group label {
+  max-width: 225px;
+  font-weight: normal;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.ri-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px;
+  margin-top: auto;
+}
+
+.ri-modal-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #4a4a4a;
+  color: white;
+}
+.ri-modal-actions button:hover {
+  background-color: #333;
+}
+
+.data-table {
+  margin-top: 20px;
+  overflow-x: auto;
+  width: 113%;
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #dad8d8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+}
+
+.data-table th {
+  background-color: #e1e0e0;
+  font-weight: bold;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.data-table tr:hover {
+  background-color: #efeded;
+}
+
+.edit-button {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.edit-button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 1200px) {
+  .register-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .register-form-group textarea {
+    min-width: 250px;
+  }
+
+.ri-ReactModal__Content {
+  width: 80% !important;
+}
+}
+
+@media (max-width: 992px) {
+  .register-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .textarea-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+    .ri-ReactModal__Content {
+      width: 90% !important;
+    }
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .register-header {
+    left: 0;
+  }
+
+  .register-form-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .register-form-group textarea {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .register-form-group input,
+  .register-form-group select,
+  .register-form-group input[type="file"] {
+    max-width: calc(100% - 130px);
+  }
+
+    .ri-ReactModal__Content {
+      width: 95% !important;
+    }
+}

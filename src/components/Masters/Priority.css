@@ -1,0 +1,153 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+    background-color: #fcfcfc;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    /* Center the header */
+}
+
+.priorityform-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    /* Center the form container */
+}
+
+.priorityform-row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    column-gap: 150px;
+    margin-left: 18px;
+}
+
+.priorityform-group {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px; /* Adds space between label and input */
+    margin-bottom: 12px;
+}
+.priorityform-group label {
+    flex-basis: 100px; 
+    text-align: right; 
+}
+
+.priorityform-group input,
+.priorityform-group select {
+    flex: 1; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 250px;
+}
+.priorityform-group input[type="checkbox"] {
+    flex: 0; 
+}
+.prioritybutton-group {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 34px;
+    gap: 10px;
+}
+
+.prioritybutton-group .btn {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+}
+
+.prioritybutton-group .btn:hover {
+    background-color: #333;
+}
+
+.prioritybutton-group .btn-delete {
+    background-color: #4a4a4a;
+}
+
+.prioritybutton-group .btn-delete:hover {
+    background-color: #333;
+}
+
+.prioritytable-container {
+    overflow-x: auto;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1457px;
+}
+
+#priorityTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    table-layout: fixed;
+}
+
+#priorityTable th,
+#priorityTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dad8d8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#priorityTable th {
+    background-color: #e1e0e0;
+    font-weight: bold;
+}
+
+#priorityTable tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+#priorityTable tr:hover {
+    background-color: #efeded;
+}
+
+#priorityTable .btn-select {
+    background-color: #4a4a4a;
+    color: white;
+    white-space: nowrap;
+}
+
+#priorityTable .btn-select:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .priorityform-row {
+        flex-wrap: wrap;
+    }
+
+    .priorityform-group {
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .prioritybutton-group {
+        flex-direction: column;
+    }
+
+    .prioritybutton-group .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

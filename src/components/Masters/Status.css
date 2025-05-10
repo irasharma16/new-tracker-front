@@ -1,0 +1,160 @@
+/* Status.css */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+    background-color: #fcfcfc;
+    font-family: Arial, sans-serif;
+}
+
+.statusform-container h1 {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    /* Center the header */
+}
+
+.statusform-container {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    /* Center the form container */
+}
+
+.statusform-row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    column-gap: 150px; /* Space between columns */
+    margin-left: 4px;
+}
+
+.statusform-group {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px; /* Adds space between label and input */
+    margin-bottom: 12px;
+}
+
+.statusform-group input[type="checkbox"] {
+    flex: 0; /* Keeps the checkbox from stretching */
+    margin-left: 10px; /* Adds some space between the checkbox and the preceding element */
+}
+
+.statusform-group label {
+    flex-basis: 150px;
+    text-align: right;
+}
+
+.statusform-group input,
+.statusform-group select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.statusbutton-group {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 25px;
+    gap: 10px;
+}
+
+.statusbutton-group .btn {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+}
+
+.statusbutton-group .btn:hover {
+    background-color: #333;
+}
+
+.statusbutton-group .btn-delete {
+    background-color: #4a4a4a;
+}
+
+.statusbutton-group .btn-delete:hover {
+    background-color: #333;
+}
+
+.statustable-container {
+    overflow-x: auto;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+#statusTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    table-layout: fixed;
+}
+
+#statusTable th,
+#statusTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dad8d8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#statusTable th {
+    background-color: #e1e0e0;
+    font-weight: bold;
+}
+
+#statusTable tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+#statusTable tr:hover {
+    background-color: #efeded;
+}
+
+#statusTable .btn-select {
+    background-color: #4a4a4a;
+    color: white;
+    white-space: nowrap;
+}
+
+#statusTable .btn-select:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .statusform-row {
+        flex-wrap: wrap;
+    }
+
+    .statusform-group {
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .statusbutton-group {
+        flex-direction: column;
+    }
+
+    .statusbutton-group .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
